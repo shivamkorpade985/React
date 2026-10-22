@@ -1,5 +1,4 @@
-import RightCard from './RightCard'
-import { map } from './../../../../05-css/node_modules/zod/src/v4/classic/schemas';
+import RightCard from './RightCard';
 
 const RightContent = (props) => {
   console.log(props.users.color);
