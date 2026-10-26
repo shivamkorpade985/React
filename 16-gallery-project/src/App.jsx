@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from './components/Card';
 
@@ -8,6 +8,7 @@ const App = () => {
 
   const [index, setIndex] = useState(1)
 
+  // This function takes the user data from the public API
   const getData = async () => {
     const response = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=10`)
     setUserData(response.data)
